@@ -8,7 +8,4 @@ BUILD APK (Windows/Mac/Linux):
 5. Click "locate" in the popup. File: app/build/outputs/apk/debug/app-debug.apk
 6. Send the APK to the phones (WhatsApp/Drive/USB). On the phone allow "Install unknown apps" and install.
 
-The app opens this link (change appUrl in MainActivity.kt if the link changes):
-https://claude.ai/artifact/QHoMPDwCF6nmJu1eB8St67
-
 IMPORTANT: the page needs a Claude sign-in inside the app. Test on one phone first.
