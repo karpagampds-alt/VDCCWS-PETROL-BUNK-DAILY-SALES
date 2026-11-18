@@ -11,7 +11,7 @@ import android.webkit.WebViewClient
 
 class MainActivity : Activity() {
     // Your published app link
-    private val appUrl = "https://claude.ai/artifact/QHoMPDwCF6nmJu1eB8St67"
+    private val appUrl = "https://karpagampds-alt.github.io/vdccws-wb/"
     private lateinit var web: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +25,8 @@ class MainActivity : Activity() {
         web.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(v: WebView, r: WebResourceRequest): Boolean {
                 val host = r.url.host ?: ""
-                // stay inside the app for Claude pages, open everything else in the browser
-                return if (host.endsWith("claude.ai") || host.endsWith("anthropic.com")) false
+                // stay inside the app for our site, open everything else in the browser
+                return if (host.endsWith("github.io")) false
                 else { startActivity(Intent(Intent.ACTION_VIEW, r.url)); true }
             }
         }
